@@ -53,7 +53,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && !isset($_POST['reset'])) {
         ];
         $_SESSION['giao_dich'][] = $giao_dich;
 
-        // Reset input form sau khi thêm thành công
         $ten = $so_tien = $loai = $ghi_chu = $ngay = '';
     }
 }
