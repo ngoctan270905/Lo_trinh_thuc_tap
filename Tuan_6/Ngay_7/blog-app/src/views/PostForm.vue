@@ -1,0 +1,1 @@
+<template><div>📝 Form bài viết (ID: {{ $route.params.id || 'mới' }})</div></template>
