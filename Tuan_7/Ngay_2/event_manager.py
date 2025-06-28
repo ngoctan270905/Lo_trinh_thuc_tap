@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 import numpy as np
 
-# ==== DỮ LIỆU MẪU ====
+# ==== DỮ LIỆU MẪU ====0
 events = [
     {"id": "EV001", "name": "Hội chợ sách", "ticket_price": 50000.0, "tickets_left": 200},
     {"id": "EV002", "name": "Triển lãm nghệ thuật", "ticket_price": 75000.0, "tickets_left": 50},
