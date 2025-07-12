@@ -6,9 +6,6 @@ import os
 
 FILENAME = "performance.npy"
 
-# ========================
-# Phần xử lý dữ liệu
-# ========================
 
 def create_performance_data():
     np.random.seed(0)

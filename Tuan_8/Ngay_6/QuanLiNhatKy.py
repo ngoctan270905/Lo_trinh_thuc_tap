@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import messagebox, simpledialog, scrolledtext
 import os
 
-# Hàm tạo nhật ký tuần
 def create_log():
     try:
         week = simpledialog.askinteger("1️⃣ Tạo nhật ký", "Tuần:")
@@ -21,7 +20,6 @@ def create_log():
     except:
         messagebox.showerror("Lỗi", "Dữ liệu không hợp lệ!")
 
-# Hàm đọc nhật ký tuần
 def read_log():
     week = simpledialog.askinteger("2️⃣ Đọc nhật ký", "Nhập số tuần cần đọc:")
     if week is None: return
@@ -85,7 +83,7 @@ def generate_summary():
 - Tổng số nhiệm vụ hoàn thành: {total_tasks}"""
     show_text("📊 Báo cáo tổng kết", report)
 
-# Hàm hiển thị danh sách các nhật ký hiện có
+
 def show_all_logs():
     logs = []
     for file in sorted(os.listdir()):
@@ -106,7 +104,7 @@ def show_all_logs():
     else:
         messagebox.showinfo("Danh sách trống", "Không có nhật ký nào được lưu.")
 
-# Hàm hiển thị văn bản trong cửa sổ riêng
+
 def show_text(title, content):
     win = tk.Toplevel(root)
     win.title(title)

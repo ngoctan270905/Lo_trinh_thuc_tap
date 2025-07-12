@@ -6,9 +6,6 @@ import os
 
 CSV_FILE = "progress.csv"
 
-# -----------------------------------
-# 1. Lưu dữ liệu nhập từ giao diện
-# -----------------------------------
 def save_data(name, week, exercises, score):
     if not os.path.exists(CSV_FILE):
         df = pd.DataFrame(columns=["Tên", "Tuần", "Bài tập", "Điểm"])
@@ -20,10 +17,6 @@ def save_data(name, week, exercises, score):
     df.to_csv(CSV_FILE, index=False)
     messagebox.showinfo("Thành công", "Đã lưu dữ liệu học viên!")
 
-# -----------------------------------
-# 2. Giao diện nhập liệu
-# -----------------------------------
-def open_input_window():
     input_win = tk.Toplevel(root)
     input_win.title("📥 Nhập dữ liệu học viên")
     input_win.geometry("300x300")
